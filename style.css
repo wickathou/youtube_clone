@@ -33,7 +33,7 @@ body {
 .search-bar {
     grid-area: nav;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
 
 
 }
@@ -62,25 +62,13 @@ body {
     grid-area: footer;
 }
 
-/* Search-bar items */
-.search-bar-alignment{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: -webkit-fill-available;
-}
+/* Navbar items */
+
+/* Left side navbar */
 
 .left{
     
 
-}
-.right{
-
-}
-
-.center{
-    max-width: 650px;
 }
 
 #upload-icon{
@@ -93,24 +81,68 @@ body {
     width: 16px;
 }
 
-#search-container{
-    height: 50px;
-    width: 100%;
+/* Central side navbar, Search bar only */
+
+.center{
 
 }
-#search-input{
+
+#search-container{
+    height: 1.5em;
     width: 100%;
 }
+#search-input{
+    width: 70%;
+    height: 100%;
+}
 #search-button{
-    
-    width: 16px;
+    height: 100%;
+    width: 3.5em;
 }
+
+#search-icon{
+    height: 100%;
+}
+
 #logo{
-    
+    max-height: 2.5em;
 }
+
+/* Right side navbar */
+
+#upload-icon{
+    height: 2em;
+}
+
+#signin-button{
+    height: 1.5em;
+}
+
+.right{
+
+}
+
+/* Navbar alignment selectors */
+
+.search-bar-alignment{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    height: -webkit-fill-available;
+}
+
+/* margin for elements */
+.margin-horizontal {
+    margin: 0 10px; 
+}
+
+
 
 /* Debugging features */
 
 .debug {
     border: 1px solid #333;
 }
+
