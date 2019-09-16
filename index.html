@@ -8,7 +8,24 @@
     <title>Youtube</title>
 </head>
 <body>
-    <nav class="search-bar debug" >NAV</nav>
+    <nav class="search-bar debug" >
+        
+        <div class="left search-bar-alignment debug">
+            <img id="search-bar-menuimg" src="images/menu.png" alt="">
+            <img id="logo" src="images/youtube_logo.png" alt="">
+        </div>
+
+        <div class="center search-bar-alignment debug">
+                <form id="search_container" class="search-bar-alignment">
+                    <input type="text" name="search" id="search-input" placeholder="Search">
+                    <button id="search-button"><img src="images/search.svg" alt=""></button>
+                </form>
+        </div>
+        <div class="right search-bar-alignment debug">
+            <img id="upload-icon" src="images/upload.svg" alt="">
+            <button id="signin-button">Sign in</button>
+        </div>
+    </nav>
     <section class="video display debug">VIDEO</section>
     <summary class="video summary debug">SUMMARY</summary>
     <div class="video details debug">DETAILS</div>

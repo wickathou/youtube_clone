@@ -32,6 +32,10 @@ body {
 
 .search-bar {
     grid-area: nav;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+
 }
 
 .sidebar {
@@ -56,6 +60,53 @@ body {
 
 .footer {
     grid-area: footer;
+}
+
+/* Search-bar items */
+.search-bar-alignment{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: -webkit-fill-available;
+}
+
+.left{
+    
+
+}
+.right{
+
+}
+
+.center{
+    max-width: 650px;
+}
+
+#upload-icon{
+    height: 16px;
+    width: 16px;
+}
+
+#search-bar-menuimg{
+    height: 16px;
+    width: 16px;
+}
+
+#search-container{
+    height: 50px;
+    width: 100%;
+
+}
+#search-input{
+    width: 100%;
+}
+#search-button{
+    
+    width: 16px;
+}
+#logo{
+    
 }
 
 /* Debugging features */
