@@ -18,13 +18,15 @@ body {
   line-height: 1.6em;
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: 4em 70% 8em 5em 50% 5em;
+  grid-template-rows: 4em 5vh 80vh 8em 5em 50% 5vh 5em;
   grid-template-areas: 
     'nav nav'
+    'spacer-top spacer-top'
     'video sidebar'
     'summary sidebar'
     'details sidebar'
     'comments sidebar'
+    'spacer-bottom spacer-bottom'  
     'footer footer'
 }
 
@@ -34,8 +36,10 @@ body {
     grid-area: nav;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
+}
 
-
+.spacer-top {
+    grid-area: spacer-top;
 }
 
 .sidebar {
@@ -56,6 +60,10 @@ body {
 
 .comments {
     grid-area: comments;
+}
+
+.spacer-bottom {
+    grid-area: spacer-bottom;
 }
 
 .footer {
@@ -138,6 +146,21 @@ body {
     margin: 0 10px; 
 }
 
+.margin-aside {
+    margin: 0 0 0 1vw;
+}
+
+.margin-vertical {
+    margin: 1vh 0;
+}
+
+
+/* Video container section */
+
+#video-container {
+    height: 100%;
+    width: 100%;
+}
 
 
 /* Debugging features */
