@@ -141,20 +141,6 @@ body {
     height: -webkit-fill-available;
 }
 
-/* margin for elements */
-.margin-horizontal {
-    margin: 0 10px; 
-}
-
-.margin-aside {
-    margin: 0 0 0 1vw;
-}
-
-.margin-vertical {
-    margin: 1vh 0;
-}
-
-
 /* Video container section */
 
 #video-container {
@@ -175,11 +161,12 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
+/* Video description */
+
 .main-details-container{
     display: flex;
 }
-
-
 
 .details-container-left{
     width: 15%;
@@ -192,6 +179,21 @@ body {
     justify-content: space-between;
 }
 
+/* comment section */
+
+#comment-amount {
+    width: 15vw;
+}
+
+#comment-sorting {
+    width: 15vw;
+}
+
+.comment-area{
+    height: 10em;
+}
+
+
 /* Generic styling classes */
 .heigth-fill {
     height: 100%;
@@ -199,6 +201,35 @@ body {
 
 .width-fill {
     width: 100%;
+}
+
+.width-2vw{
+    width: 2vw;    
+}
+.width-3vw{
+    width: 3vw;    
+}
+.width-4vw{
+    width: 4vw;    
+}
+.width-6vw{
+    width: 6vw;    
+}
+.width-10vw{
+    width: 10vw;    
+}
+
+/* margin for elements */
+.margin-horizontal {
+    margin: 0 10px; 
+}
+
+.margin-aside {
+    margin: 0 0 0 1vw;
+}
+
+.margin-vertical {
+    margin: 1vh 0;
 }
 
 /* Debugging features */
