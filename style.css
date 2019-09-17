@@ -161,6 +161,9 @@ body {
     height: 100%;
     width: 100%;
 }
+
+/* Video info container section */
+
 .info-container{
         display: flex;
         flex-direction: column;
@@ -174,9 +177,9 @@ body {
 }
 .main-details-container{
     display: flex;
+}
 
-    width: 100%
-    }
+
 
 .details-container-left{
     width: 15%;
@@ -188,6 +191,16 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
+/* Generic styling classes */
+.heigth-fill {
+    height: 100%;
+}
+
+.width-fill {
+    width: 100%;
+}
+
 /* Debugging features */
 
 .debug {
