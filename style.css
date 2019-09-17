@@ -18,7 +18,7 @@ body {
   line-height: 1.6em;
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: 4em 5vh 80vh 8em 16em 50% 5vh 5em;
+  grid-template-rows: 4em 5vh 80vh 8em 16em 50% 5vh 10em;
   grid-template-areas: 
     'nav nav'
     'spacer-top spacer-top'
@@ -112,7 +112,7 @@ body {
     height: 100%;
 }
 
-#logo{
+.logo{
     max-height: 2.5em;
 }
 
@@ -215,11 +215,21 @@ body {
 }
 footer li{
     display: inline;
+    margin: 0 10px;
 }
 
 /* Generic styling classes */
+
 .heigth-fill {
     height: 100%;
+}
+
+.heigth-2em{
+    height: 2em;
+}
+
+.heigth-4em{
+    height: 4em;
 }
 
 .width-fill {
@@ -240,6 +250,11 @@ footer li{
 }
 .width-10vw{
     width: 10vw;    
+}
+
+/* Alignment generic classes */
+.align-items-center{
+    align-items: center;
 }
 
 /* margin for elements */
