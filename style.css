@@ -41,7 +41,8 @@ main {
     display: grid;
     grid-area: main;
     grid-template-columns: 3fr 1.3fr;
-    grid-template-rows: 5vh 70em max-content max-content max-content 5vh;
+    /* Size for the video seems broken */
+    grid-template-rows: 5vh 70vh max-content max-content max-content 5vh;
     grid-template-areas: 
     'spacer-top spacer-top'
     'video sidebar'
@@ -224,11 +225,10 @@ main {
 
 .main-details-container{
     display: flex;
-
 }
 
 .details-container-left{
-    width: 10%;
+    width: 50px;
     text-align: center;
 }
 .details-container-right{
@@ -239,6 +239,47 @@ main {
     border-radius: 50%;
     height: 40px;
     width: 40px;
+    background-color:#cc0000;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    border-style: none;
+    box-shadow: none;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.comment-picture{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    border-style: none;
+    box-shadow: none;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.comment-picture-color1{
+    background-color:#cc0000;
+}
+
+.comment-picture-color2{
+    background-color: blueviolet;
+}
+
+.comment-picture-color3{
+    background-color: rgb(32, 107, 48);
+}
+
+.comment-picture-color4{
+    background-color:#177777;
+}
+
+.comment-picture-color5{
+    background-color:#743b06;
 }
 
 /* comment section */
@@ -357,6 +398,10 @@ footer li{
     padding: 0 2em;
 }
 
+.side-padding-1em{
+    padding: 0 1em;
+}
+
 /* margin for elements */
 .margin-horizontal {
     margin: 0 10px; 
@@ -424,6 +469,10 @@ footer li{
             'spacer-bottom';
     }
 
+    .hide-block {
+        display: none;
+    }
+
     .margin-content-body {
         margin: 0; 
     }
@@ -463,6 +512,7 @@ footer li{
     .heigth-responsive {
     height: 8em;
     }
+
   }
   @media (max-height: 500px) {
       .margin-content-body{
