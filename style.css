@@ -34,7 +34,7 @@ body {
 main {
     display: grid;
     grid-area: main;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr 1.3fr;
     grid-template-rows: 5vh max-content max-content max-content max-content 5vh;
     grid-template-areas: 
     'spacer-top spacer-top'
@@ -213,23 +213,25 @@ section {
 }
 
 .comment-area{
-    height: 10em;
+    height: 90px;
+    overflow: hidden;
 }
 
 /* Sidebar section */
 
 .sidebar-left{
-    width: 40%;
+    width: 168px;
+    height: 94px;
     
 }
 .sidebar-right{
-    width: 60%;
+    width: 100%;
     margin-left: 0.5vw;
 }
 
 #sidebar-thumbnail{
-    width: 100%;
-    height: 100%;
+    width: 168px;
+    height: 94px;
 }
 
 /* Footer section */
@@ -251,12 +253,20 @@ footer li{
     height: 100%;
 }
 
-.heigth-responsive {
-    height: 100%;
+.heigth-responsive-60px {
+    height: 60px;
 }
 
-.overflow-responsive{
-    overflow: unset;
+.overflow{
+    overflow: hidden;
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+.heigth-1-6em{
+    max-height: 1.6em;
 }
 
 .heigth-2em{
@@ -283,8 +293,8 @@ footer li{
 .width-6vw{
     width: 6vw;    
 }
-.width-10vw{
-    width: 10vw;    
+.width-fit-content{
+    width: fit-content;    
 }
 
 /* Alignment generic classes */
@@ -333,9 +343,8 @@ footer li{
 }
 
 #details-read-more{
-    display: none;
     width: 100%;
-    text-align: center;
+    text-align: left;
 }
 
 @media (max-width: 800px) {
@@ -399,15 +408,11 @@ footer li{
     }
 
     #details-read-more{
-    display: block
+    text-align: center;
     }
 
     .heigth-responsive {
     height: 8em;
-    }
-
-.overflow-responsive{
-    overflow: hidden;
     }
   }
 
