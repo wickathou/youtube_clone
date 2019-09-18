@@ -8,6 +8,7 @@
     <title>Youtube</title>
 </head>
 <body>
+    <!-- Navbar -->
     <nav class="search-bar debug" >
         
         <div class="left search-bar-alignment debug">
@@ -26,191 +27,203 @@
             <button class='margin-horizontal' id="signin-button">Sign in</button>
         </div>
     </nav>
-    <div class="spacer-top" ></div>
-    <section class="video display debug">
-        <iframe id="video-container" src="https://www.youtube.com/embed/ed8SzALpx1Q" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section>
-    <summary class="video margin-vertical heigth-fill summary debug">
-        <div class="info-container">
-            <h1>Video title</h1>
-            <div class="info-container-text responsive-container">
+    <!-- spacer -->
+    <main class="margin-content-body">
+        <div class="margin-responsive spacer-top" ></div>
+        <!-- Video display -->
+        <section class="video display debug">
+            <iframe id="video-container" src="https://www.youtube.com/embed/ed8SzALpx1Q" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <!-- Video summary -->
+        <summary class="margin-responsive video margin-vertical heigth-fill summary debug">
+            <div class="info-container">
+                <h1>Video title</h1>
                 <div class="info-container-text responsive-container">
-                    <h6>100,000 views</h6>
+                    <div class="info-container-text responsive-container">
+                        <h6>100,000 views</h6>
 
-                    <p id="info-dot"> • </p>
-                    <h6> Published on 27 Feb 2020</h6>
-                </div>
-                <div id="user-interaction">
-                    <div class="container">
-                        <button>Up</button>
-                        <button>Down</button>
-                        <button>Share</button>
-                        <button>Save</button>
-                        <button>Options</button>
+                        <p id="info-dot"> • </p>
+                        <h6> Published on 27 Feb 2020</h6>
                     </div>
-                </div>
-            </div>
-
-        </div>
-
-    </summary>
-    <div class="video margin-vertical  details debug">
-        <div class="main-details-container heigth-fill width-fill debug">
-        <div class="details-container details-container-left debug">
-                <button>Icon</button>
-        </div>
-        <div class="details-container details-container-right debug">
-            <div class="heigth-fill debug">
-                    <div class="debug">
-                        <div class="info-container-text debug">
-                            <div>
-                                <p>autor</p>
-                                <p>subs</p>
-                            </div>
-                            <button>Subscribe</button>
+                    <div id="user-interaction">
+                        <div class="container">
+                            <button>Up</button>
+                            <button>Down</button>
+                            <button>Share</button>
+                            <button>Save</button>
+                            <button>Options</button>
                         </div>
                     </div>
-                    <div class="debug">
-                        Description <br>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate porro consequuntur temporibus obcaecati nemo suscipit cumque tempora aliquid dignissimos numquam deserunt doloribus, libero non voluptate delectus, quam placeat voluptates odio.
+                </div>
+
+            </div>
+
+        </summary>
+        <!-- Video details -->
+        <div class="margin-responsive video margin-vertical  details debug">
+            <div class="main-details-container heigth-fill width-fill debug">
+            <div class="details-container details-container-left debug">
+                    <button>Icon</button>
+            </div>
+            <div class="details-container details-container-right debug">
+                <div class="heigth-fill debug">
+                        <div class="debug">
+                            <div class="info-container-text debug">
+                                <div>
+                                    <p>autor</p>
+                                    <p>subs</p>
+                                </div>
+                                <button>Subscribe</button>
+                            </div>
+                        </div>
+                        <div class="heigth-responsive overflow-responsive debug">
+                            Description <br>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate porro consequuntur temporibus obcaecati nemo suscipit cumque tempora aliquid dignissimos numquam deserunt doloribus, libero non voluptate delectus, quam placeat voluptates odio.
+                        </div>
+                        <div id="details-read-more"><a href="#">Show more</a></div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Video comments -->
+        <div class="margin-responsive video comments debug">
+            <div class="main-details-container">
+                <div id="comment-amount" class="debug">56 Comments</div>
+                <div id='comment-sorting' class="debug">SORT BY</div>
+            </div>
+            <div class="main-details-container ">
+                <div class="details-container-left debug">Icon</div>
+                <div class="details-container-right debug"><Input type="text" placeholder="Comments"></Input>
+                </div>
+            </div>
+            COMMENTS        
+            <div class="main-details-container margin-vertical">
+                <div class="details-container-left debug">Icon</div>
+                <div class="details-container-right debug">
+                    <div class="main-details-container debug">
+                        <div class="width-10vw debug">Name</div>
+                        <div class="width-10vw debug">Date</div>
                     </div>
-            </div>
-        </div>
-        </div>
-    </div>
-    <div class="video comments debug">
-        <div class="main-details-container">
-            <div id="comment-amount" class="debug">56 Comments</div>
-            <div id='comment-sorting' class="debug">SORT BY</div>
-        </div>
-        <div class="main-details-container ">
-            <div class="details-container-left debug">Icon</div>
-            <div class="details-container-right debug"><Input type="text" placeholder="Comments"></Input>
-            </div>
-        </div>
-        COMMENTS        
-        <div class="main-details-container margin-vertical">
-            <div class="details-container-left debug">Icon</div>
-            <div class="details-container-right debug">
-                <div class="main-details-container debug">
-                    <div class="width-10vw debug">Name</div>
-                    <div class="width-10vw debug">Date</div>
-                </div>
-                <div class="main-details-container debug">
-                    <div class="comment-area width-fill debug">Comment</div>
-                </div>
-                <div class="main-details-container debug">
-                    <div class="width-3vw debug">Like</div>
-                    <div class="width-2vw debug">Dlk</div>
-                    <div class="width-4vw debug">Reply</div>
-                </div>
-                <div class="main-details-container debug">
-                    <div class="width-6vw debug">View reply</div>
-                    <div class="width-2vw debug">🔻</div>
+                    <div class="main-details-container debug">
+                        <div class="comment-area width-fill debug">Comment</div>
+                    </div>
+                    <div class="main-details-container debug">
+                        <div class="width-3vw debug">Like</div>
+                        <div class="width-2vw debug">Dlk</div>
+                        <div class="width-4vw debug">Reply</div>
+                    </div>
+                    <div class="main-details-container debug">
+                        <div class="width-6vw debug">View reply</div>
+                        <div class="width-2vw debug">🔻</div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="main-details-container margin-vertical">
-            <div class="details-container-left debug">Icon</div>
-            <div class="details-container-right debug">
-                <div class="main-details-container debug">
-                    <div class="width-10vw debug">Name</div>
-                    <div class="width-10vw debug">Date</div>
-                </div>
-                <div class="main-details-container debug">
-                    <div class="comment-area width-fill debug">Comment</div>
-                </div>
-                <div class="main-details-container debug">
-                    <div class="width-3vw debug">Like</div>
-                    <div class="width-2vw debug">Dlk</div>
-                    <div class="width-4vw debug">Reply</div>
-                </div>
-                <div class="main-details-container debug">
-                    <div class="width-6vw debug">View reply</div>
-                    <div class="width-2vw debug">🔻</div>
+            <div class="main-details-container margin-vertical">
+                <div class="details-container-left debug">Icon</div>
+                <div class="details-container-right debug">
+                    <div class="main-details-container debug">
+                        <div class="width-10vw debug">Name</div>
+                        <div class="width-10vw debug">Date</div>
+                    </div>
+                    <div class="main-details-container debug">
+                        <div class="comment-area width-fill debug">Comment</div>
+                    </div>
+                    <div class="main-details-container debug">
+                        <div class="width-3vw debug">Like</div>
+                        <div class="width-2vw debug">Dlk</div>
+                        <div class="width-4vw debug">Reply</div>
+                    </div>
+                    <div class="main-details-container debug">
+                        <div class="width-6vw debug">View reply</div>
+                        <div class="width-2vw debug">🔻</div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="main-details-container margin-vertical">
-            <div class="details-container-left debug">Icon</div>
-            <div class="details-container-right debug">
-                <div class="main-details-container debug">
-                    <div class="width-10vw debug">Name</div>
-                    <div class="width-10vw debug">Date</div>
-                </div>
-                <div class="main-details-container debug">
-                    <div class="comment-area width-fill debug">Comment</div>
-                </div>
-                <div class="main-details-container debug">
-                    <div class="width-3vw debug">Like</div>
-                    <div class="width-2vw debug">Dlk</div>
-                    <div class="width-4vw debug">Reply</div>
-                </div>
-                <div class="main-details-container debug">
-                    <div class="width-6vw debug">View reply</div>
-                    <div class="width-2vw debug">🔻</div>
+            <div class="main-details-container margin-vertical">
+                <div class="details-container-left debug">Icon</div>
+                <div class="details-container-right debug">
+                    <div class="main-details-container debug">
+                        <div class="width-10vw debug">Name</div>
+                        <div class="width-10vw debug">Date</div>
+                    </div>
+                    <div class="main-details-container debug">
+                        <div class="comment-area width-fill debug">Comment</div>
+                    </div>
+                    <div class="main-details-container debug">
+                        <div class="width-3vw debug">Like</div>
+                        <div class="width-2vw debug">Dlk</div>
+                        <div class="width-4vw debug">Reply</div>
+                    </div>
+                    <div class="main-details-container debug">
+                        <div class="width-6vw debug">View reply</div>
+                        <div class="width-2vw debug">🔻</div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <aside class="sidebar margin-aside debug">
-        <div class="info-container-text debug">
-            <div class="debug">Up next</div>
-            <div class="debug">Autoplay <button>Autoplay</button></div>
-        </div>
-        <div class="main-details-container margin-vertical debug">
-            <div class="details-container sidebar-left debug">
-                <img id="sidebar-thumbnail" class="style-scope ytd-moving-thumbnail-renderer" 
-                src="https://i.ytimg.com/an_webp/tXqnRMU1fTs/mqdefault_6s.webp?du=3000&sqp=CJXNg-wF&rs=AOn4CLCwL3PxyKLaKcY1ywT1XpRy6vjx7Q"> 
-             </div>
-            <div class="details-container sidebar-right debug">
-                <div class="debug">Video title</div>
-                <div class="debug">Author</div>
-                <div class="debug ">views</div>
+        <!-- Video related -->
+        <aside class="margin-responsive sidebar margin-aside debug">
+            <div class="info-container-text debug">
+                <div class="debug">Up next</div>
+                <div class="debug">Autoplay <button>Autoplay</button></div>
             </div>
-        </div>
-        <div class="spacer-bottom margin-vertical debug"></div>
+            <div class="main-details-container margin-vertical debug">
+                <div class="details-container sidebar-left debug">
+                    <img id="sidebar-thumbnail" class="style-scope ytd-moving-thumbnail-renderer" 
+                    src="https://i.ytimg.com/an_webp/tXqnRMU1fTs/mqdefault_6s.webp?du=3000&sqp=CJXNg-wF&rs=AOn4CLCwL3PxyKLaKcY1ywT1XpRy6vjx7Q"> 
+                </div>
+                <div class="details-container sidebar-right debug">
+                    <div class="debug">Video title</div>
+                    <div class="debug">Author</div>
+                    <div class="debug ">views</div>
+                </div>
+            </div>
+            <div class="spacer-bottom margin-vertical debug"></div>
 
-        <div class="main-details-container margin-vertical debug">
-            <div class="details-container sidebar-left debug">
-                <img id="sidebar-thumbnail" class="style-scope ytd-moving-thumbnail-renderer" 
-                src="https://i.ytimg.com/an_webp/tXqnRMU1fTs/mqdefault_6s.webp?du=3000&sqp=CJXNg-wF&rs=AOn4CLCwL3PxyKLaKcY1ywT1XpRy6vjx7Q"> 
-             </div>
-            <div class="details-container sidebar-right debug">
-                <div class="debug">Video title</div>
-                <div class="debug">Author</div>
-                <div class="debug ">10k views</div>
+            <div class="main-details-container margin-vertical debug">
+                <div class="details-container sidebar-left debug">
+                    <img id="sidebar-thumbnail" class="style-scope ytd-moving-thumbnail-renderer" 
+                    src="https://i.ytimg.com/an_webp/tXqnRMU1fTs/mqdefault_6s.webp?du=3000&sqp=CJXNg-wF&rs=AOn4CLCwL3PxyKLaKcY1ywT1XpRy6vjx7Q"> 
+                </div>
+                <div class="details-container sidebar-right debug">
+                    <div class="debug">Video title</div>
+                    <div class="debug">Author</div>
+                    <div class="debug ">10k views</div>
+                </div>
             </div>
-        </div>
-        <div class="main-details-container margin-vertical debug">
-            <div class="details-container sidebar-left debug">
-                <img id="sidebar-thumbnail" class="style-scope ytd-moving-thumbnail-renderer" 
-                src="https://i.ytimg.com/an_webp/tXqnRMU1fTs/mqdefault_6s.webp?du=3000&sqp=CJXNg-wF&rs=AOn4CLCwL3PxyKLaKcY1ywT1XpRy6vjx7Q"> 
-             </div>
-            <div class="details-container sidebar-right debug">
-                <div class="debug">Video title</div>
-                <div class="debug">Author</div>
-                <div class="debug ">20k views</div>
+            <div class="main-details-container margin-vertical debug">
+                <div class="details-container sidebar-left debug">
+                    <img id="sidebar-thumbnail" class="style-scope ytd-moving-thumbnail-renderer" 
+                    src="https://i.ytimg.com/an_webp/tXqnRMU1fTs/mqdefault_6s.webp?du=3000&sqp=CJXNg-wF&rs=AOn4CLCwL3PxyKLaKcY1ywT1XpRy6vjx7Q"> 
+                </div>
+                <div class="details-container sidebar-right debug">
+                    <div class="debug">Video title</div>
+                    <div class="debug">Author</div>
+                    <div class="debug ">20k views</div>
+                </div>
             </div>
-        </div>
-        <div class="main-details-container margin-vertical debug">
-            <div class="details-container sidebar-left debug">
-                <img id="sidebar-thumbnail" class="style-scope ytd-moving-thumbnail-renderer" 
-                src="https://i.ytimg.com/an_webp/tXqnRMU1fTs/mqdefault_6s.webp?du=3000&sqp=CJXNg-wF&rs=AOn4CLCwL3PxyKLaKcY1ywT1XpRy6vjx7Q"> 
-             </div>
-            <div class="details-container sidebar-right debug">
-                <div class="debug">Video title</div>
-                <div class="debug">Author</div>
-                <div class="debug ">30k views</div>
+            <div class="main-details-container margin-vertical debug">
+                <div class="details-container sidebar-left debug">
+                    <img id="sidebar-thumbnail" class="style-scope ytd-moving-thumbnail-renderer" 
+                    src="https://i.ytimg.com/an_webp/tXqnRMU1fTs/mqdefault_6s.webp?du=3000&sqp=CJXNg-wF&rs=AOn4CLCwL3PxyKLaKcY1ywT1XpRy6vjx7Q"> 
+                </div>
+                <div class="details-container sidebar-right debug">
+                    <div class="debug">Video title</div>
+                    <div class="debug">Author</div>
+                    <div class="debug ">30k views</div>
+                </div>
             </div>
-        </div>
 
-    </aside>
-    <div class="spacer-bottom"></div>
+        </aside>
+        <!-- Spacer -->
+        <div class="margin-responsive spacer-bottom"></div>
+    </main>
+    <!-- Footer read more -->
     <div id="footer-read-more"><a href="#">Show more</a></div>
+    <!-- Footer desktop -->
     <footer class="footer debug">
         <div class="footer-container debug">
             <div class="main-details-container heigth-4em align-items-center debug">
