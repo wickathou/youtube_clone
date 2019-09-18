@@ -35,7 +35,7 @@ main {
     display: grid;
     grid-area: main;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 5vh 80vh 8em 16em max-content 5vh;
+    grid-template-rows: 5vh max-content max-content max-content max-content 5vh;
     grid-template-areas: 
     'spacer-top spacer-top'
     'video sidebar'
@@ -51,6 +51,11 @@ main {
     grid-area: nav;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
+    position: fixed;
+    height: 3em;
+    width: 100%;
+    background-color: white;
+
 }
 
 .spacer-top {
@@ -107,15 +112,16 @@ main {
 /* Central side navbar, Search bar only */
 
 .center{
-
+    display: flex;
+    justify-content: center;
 }
 
 #search-container{
     height: 1.5em;
-    width: 100%;
+    width: 60%;
 }
 #search-input{
-    width: 70%;
+    width: 100%;
     height: 100%;
 }
 #search-button{
@@ -142,7 +148,8 @@ main {
 }
 
 .right{
-
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* Navbar alignment selectors */
@@ -151,12 +158,16 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    /*justify-content: center;*/
     align-self: center;
     height: -webkit-fill-available;
 }
 
 /* Video container section */
+
+section {
+    height: 40em;
+}
 
 #video-container {
     height: 100%;
@@ -233,6 +244,7 @@ footer li{
     margin: 0 10px;
 }
 
+
 /* Generic styling classes */
 
 .heigth-fill {
@@ -278,6 +290,12 @@ footer li{
 /* Alignment generic classes */
 .align-items-center{
     align-items: center;
+}
+
+/* Padding for elements */
+
+.side-padding-2em{
+    padding: 0 2em;
 }
 
 /* margin for elements */
@@ -349,35 +367,33 @@ footer li{
     }
 
     .margin-content-body {
-    margin: 0; 
+        margin: 0; 
     }
 
-    .margin-aside {
-    margin: 0;
-    }
-
-    .margin-responsive {
-    margin: 0 2vw;
+    .margin-responsive, .margin-aside {
+        margin: 0 2vw;
     }
 
     footer{
         display: none;
-      }
+    }
+
     #footer-read-more{
         display: block;
     }
+
     .responsive-container{
         flex-direction: column;   
     }
-    .margin-aside{
-        margin: 0;
-    }
+
     #info-dot{
         display: none;
     }
+
     #search-input{
         display: none;
     }
+    
     .search-bar{
         grid-template-columns: 1fr 0.5fr 1fr;
     }
