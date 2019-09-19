@@ -311,7 +311,7 @@ main {
     margin-left: 0.5vw;
 }
 
-#sidebar-thumbnail{
+.sidebar-thumbnail{
     width: 168px;
     height: 94px;
 }
@@ -435,7 +435,9 @@ footer li{
 .icons-padding{
     padding-top: 2px;
 }
-
+.min-width-4em img{
+    padding-right: 8px;
+}
 
 /* margin for elements */
 .margin-horizontal {
@@ -498,6 +500,8 @@ footer li{
 .small-icon {
     height: 16px;
 }
+
+
 
 
 
