@@ -352,6 +352,9 @@ footer li{
 .heigth-2em{
     height: 2em;
 }
+.heigth-1em{
+    height: 1em;
+}
 
 .heigth-4em{
     height: 4em;
@@ -422,6 +425,39 @@ footer li{
 .margin-vertical {
     margin: 1vh 0;
 }
+
+/* Font sizes */
+.font-0-7em{
+    font-size: 0.7em;
+}
+
+.font-1-3em{
+    font-size: 1.3em;
+}
+.font-1-4em{
+    font-size: 1.4em;
+}
+.font-1-6em{
+    font-size: 1.6em;
+}
+.font-1-8em{
+    font-size: 1.8em;
+}
+.lineheight-2-1em{
+    line-height: 2.1em;
+}
+.lineheight-2-4em{
+    line-height: 2.4em;
+}
+.font-gray{
+    color: #606060;
+    fill: #606060;
+}
+.font-bold{
+    font-weight: bold;
+}
+
+
 
 /* Debugging features */
 
