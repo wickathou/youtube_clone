@@ -42,7 +42,7 @@ main {
     grid-area: main;
     grid-template-columns: 3fr 1.3fr;
     /* Size for the video seems broken */
-    grid-template-rows: 5vh 70vh max-content max-content max-content 5vh;
+    grid-template-rows: 5vh 70vh 6.5em max-content max-content 5vh;
     grid-template-areas: 
     'spacer-top spacer-top'
     'video sidebar'
@@ -293,8 +293,10 @@ main {
 }
 
 .comment-area{
-    height: 90px;
+    max-height: 80px;
     overflow: hidden;
+    min-height: 40px;
+    margin-bottom: 5px;
 }
 
 /* Sidebar section */
@@ -399,6 +401,7 @@ footer li{
     /*width: fit-content;*/
     height: 1.6em;
     max-width: 20%;
+    padding: 0 2em 0 0;
 }
 
 .max-width{
@@ -425,6 +428,11 @@ footer li{
 .side-padding-1em{
     padding: 0 1em;
 }
+
+.icons-padding{
+    padding-top: 2px;
+}
+
 
 /* margin for elements */
 .margin-horizontal {
@@ -485,10 +493,24 @@ footer li{
 }
 
 
+
+footer li div{
+    display: flex;
+    align-items: flex-start;
+}
+
+footer li div span{
+    padding: 5px 2px 0 2px;
+}
+
+
+
+
+
 /* Debugging features */
 
 .debug {
-    border: 1px solid #333;
+    /*border: 1px solid #333;*/
 }
 
 #footer-read-more{
