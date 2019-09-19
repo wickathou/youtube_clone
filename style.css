@@ -285,7 +285,7 @@ main {
 /* comment section */
 
 #comment-amount {
-    width: 15vw;
+    width: 27vw;
 }
 
 #comment-sorting {
@@ -374,6 +374,9 @@ footer li{
     width: 100%;
 }
 
+.min-width-4em {
+    min-width: 4em;
+}
 
 .width-2em {
     width: 2em;
@@ -453,6 +456,10 @@ footer li{
 
 .margin-vertical {
     margin: 1vh 0;
+}
+
+.margin-top {
+    margin-top: 1em;
 }
 
 /* Font sizes */
