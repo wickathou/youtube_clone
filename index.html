@@ -40,12 +40,10 @@
         <summary class="margin-responsive video margin-vertical heigth-fill summary debug">
             <div class="info-container">
                 <h1 class="font-1-8em lineheight-2-4em">Video title</h1>
-                <div class="info-container-text responsive-container  font-0-7em">
+                <div class="info-container-text responsive-container  font-1em">
                     <div class="info-container-text responsive-container">
                         <div>100,000 views</div>
-
-                        <div id="info-dot"> • </div>
-                        <div> Published on 27 Feb 2020</div>
+                        <div class="hide-block-summary"> • Published on 27 Feb 2020</div>
                     </div>
                     <div id="user-interaction">
                         <div class="main-details-container align-items-center">
@@ -90,85 +88,101 @@
         <!-- Video comments -->
         <div class="margin-responsive video comments debug">
             <div class="main-details-container">
-                <div id="comment-amount" class="debug">56 Comments</div>
-                <div id='comment-sorting' class="debug">SORT BY</div>
+                <div id="comment-amount" class="font-1-6em debug">56 Comments</div>
+                <div id='comment-sorting' class="font-1-4em debug">SORT BY</div>
             </div>
             <div class="main-details-container ">
                 <div class="details-container details-container-left debug">
                     <button class="comment-picture comment-picture-color5">Icon</button>
             </div>
-                <div class="details-container-right debug"><Input type="text" placeholder="Comments"></Input>
+                <div class="font-1-4em details-container-right debug"><Input type="text" placeholder="Comments"></Input>
                 </div>
             </div>
-            COMMENTS
+            
             <!-- comment blocks  starts      -->
             <div class="main-details-container margin-vertical">
                 <div class="details-container details-container-left debug">
                     <button class="comment-picture comment-picture-color1">Icon</button>
             </div>
+
                 <div class="details-container-right debug">
-                    <div class="main-details-container debug">
-                        <div class="width-fit-content debug">Name</div>
-                        <div class="width-fit-content debug">Date</div>
+                    <div class="font-1-3em main-details-container debug">
+                        <div class="font-bold width-fit-content debug">Name</div>
+                        <div class=" font-gray width-fit-content debug">Date</div>
                     </div>
+
                     <div class="main-details-container debug">
-                        <div class="comment-area width-fill debug">Comment</div>
+                        <div class="font-1-4em comment-area width-fill debug">Comment</div>
                     </div>
-                    <div class="main-details-container debug">
+
+                    <div class="font-1-3em font-gray main-details-container debug">
                         <div class="width-3vw debug">Like</div>
                         <div class="width-2vw debug">Dlk</div>
-                        <div class="width-4vw debug">Reply</div>
+                        <div class="width-4vw debug">REPLY</div>
                     </div>
+
                     <div class="main-details-container debug">
-                        <div class="width-fit-content    debug"><strong>Hide reply</strong></div>
-                        <div class="width-2vw debug">🔻</div>
+                        <div class="width-fit-content font-1-3em font-gray debug"><strong>Hide reply</strong></div>
+                        <div class="width-2vw debug"><img class=" small-icon" src="images/down-arrow.svg" alt="" srcset=""></div>
                     </div>
-                    <div class="main-details-container margin-vertical">
-                        <div class="details-container details-container-left debug">
-                    <button class="comment-picture comment-picture-color2">Icon</button>
-            </div>
-                        <div class="details-container-right debug">
-                            <div class="main-details-container debug">
-                                <div class="width-fit-content debug">Name</div>
-                                <div class="width-fit-content debug">Date</div>
-                            </div>
-                            <div class="main-details-container debug">
-                                <div class="comment-area width-fill debug">Comment</div>
-                            </div>
-                            <div class="main-details-container debug">
-                                <div class="width-3vw debug">Like</div>
-                                <div class="width-2vw debug">Dlk</div>
-                                <div class="width-4vw debug">Reply</div>
-                            </div>
-                            <div class="main-details-container debug">
-                                <div class="width-fit-content    debug">View reply</div>
-                                <div class="width-2vw debug">🔻</div>
-                            </div>
-                        </div>
-                    </div>
+
+                        <!-- Reply comment start  -->
+                                <div class="main-details-container margin-vertical">
+                                    <div class="details-container details-container-left debug">
+                                        <button class="comment-picture comment-picture-color2">Icon</button>
+                                    </div>
+                                    
+                                    <div class="details-container-right debug">
+                                        <div class="font-1-3em main-details-container debug">
+                                            <div class="font-bold width-fit-content debug">Name</div>
+                                            <div class=" font-gray width-fit-content debug">Date</div>
+                                        </div>
+                                        
+                                        <div class="main-details-container debug">
+                                            <div class="font-1-4em comment-area width-fill debug">Comment</div>
+                                        </div>
+
+                                        <div class="font-1-3em font-gray main-details-container debug">
+                                            <div class="width-3vw debug">Like</div>
+                                            <div class="width-2vw debug">Dlk</div>
+                                            <div class="width-4vw debug">REPLY</div>
+                                        </div>
+                                        
+                                        <div class="main-details-container debug">
+                                            <div class="width-fit-content font-1-3em font-gray debug">View reply</div>
+                                            <div class="width-2vw debug"><img class=" small-icon" src="images/down-arrow.svg" alt="" srcset=""></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                        <!-- Reply comment end  -->
+
                 </div>
             </div>
             <!-- comment block ends -->
             <div class="main-details-container margin-vertical">
                 <div class="details-container details-container-left debug">
-                    <button class="comment-picture comment-picture-color3">Icon</button>
-            </div>
+                    <button class="comment-picture comment-picture-color1">Icon</button>
+                </div>
+            
                 <div class="details-container-right debug">
-                    <div class="main-details-container debug">
-                        <div class="width-fit-content debug">Name</div>
-                        <div class="width-fit-content debug">Date</div>
+                    <div class="font-1-3em main-details-container debug">
+                        <div class="font-bold width-fit-content debug">Name</div>
+                        <div class=" font-gray width-fit-content debug">Date</div>
                     </div>
+            
                     <div class="main-details-container debug">
-                        <div class="comment-area width-fill debug">Comment</div>
+                        <div class="font-1-4em comment-area width-fill debug">Comment</div>
                     </div>
-                    <div class="main-details-container debug">
+            
+                    <div class="font-1-3em font-gray main-details-container debug">
                         <div class="width-3vw debug">Like</div>
                         <div class="width-2vw debug">Dlk</div>
-                        <div class="width-4vw debug">Reply</div>
+                        <div class="width-4vw debug">REPLY</div>
                     </div>
                     <div class="main-details-container debug">
-                        <div class="width-fit-content    debug">View reply</div>
-                        <div class="width-2vw debug">🔻</div>
+                        <div class="width-fit-content font-1-3em font-gray debug">View reply</div>
+                        <div class="width-2vw debug"><img class=" small-icon" src="images/down-arrow.svg" alt="" srcset=""></div>
                     </div>
                 </div>
             </div>
@@ -176,24 +190,27 @@
             
             <div class="main-details-container margin-vertical">
                 <div class="details-container details-container-left debug">
-                    <button class="comment-picture comment-picture-color4">Icon</button>
-            </div>
+                    <button class="comment-picture comment-picture-color1">Icon</button>
+                </div>
+            
                 <div class="details-container-right debug">
-                    <div class="main-details-container debug">
-                        <div class="width-fit-content debug">Name</div>
-                        <div class="width-fit-content debug">Date</div>
+                    <div class="font-1-3em main-details-container debug">
+                        <div class="font-bold width-fit-content debug">Name</div>
+                        <div class=" font-gray width-fit-content debug">Date</div>
                     </div>
+            
                     <div class="main-details-container debug">
-                        <div class="comment-area width-fill debug">Comment</div>
+                        <div class="font-1-4em comment-area width-fill debug">Comment</div>
                     </div>
-                    <div class="main-details-container debug">
+            
+                    <div class="font-1-3em font-gray main-details-container debug">
                         <div class="width-3vw debug">Like</div>
                         <div class="width-2vw debug">Dlk</div>
-                        <div class="width-4vw debug">Reply</div>
+                        <div class="width-4vw debug">REPLY</div>
                     </div>
                     <div class="main-details-container debug">
-                        <div class="width-fit-content    debug">View reply</div>
-                        <div class="width-2vw debug">🔻</div>
+                        <div class="width-fit-content font-1-3em font-gray debug">View reply</div>
+                        <div class="width-2vw debug"><img class=" small-icon" src="images/down-arrow.svg" alt="" srcset=""></div>
                     </div>
                 </div>
 
@@ -201,147 +218,199 @@
             </div>
         </div>
         <!-- Video related -->
+        <!-- Related header starts -->
         <aside class="margin-responsive sidebar margin-aside debug">
             <div class="info-container-text debug">
-                <div class="debug">Up next</div>
-                <div class="debug">Autoplay <button>Autoplay</button></div>
+                <div class="font-1-6em debug">Up next</div>
+                <div class="font-1-3em font-gray main-details-container align-items-center debug">Autoplay
+                    <img class="width-4em side-padding-1em" src="images/application-shift.svg" alt="" srcset="">
+                </div>
             </div>
+            <!-- Related header ends -->
+
+            <!-- video related  -->
             <div class="main-details-container margin-vertical debug">
                 <div class="details-container sidebar-left debug">
                     <img id="sidebar-thumbnail" class="style-scope ytd-moving-thumbnail-renderer" 
                     src="https://i.ytimg.com/an_webp/tXqnRMU1fTs/mqdefault_6s.webp?du=3000&sqp=CJXNg-wF&rs=AOn4CLCwL3PxyKLaKcY1ywT1XpRy6vjx7Q"> 
                 </div>
                 <div class="details-container sidebar-right debug">
-                    <div class="heigth-1-6em overflow-hidden debug">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut voluptate, quae earum corporis rem aliquid omnis eligendi iusto animi autem, quod cupiditate sunt possimus explicabo repudiandae distinctio expedita voluptatum non?</div>
-                    <div class="heigth-1-6em overflow-hidden debug">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, recusandae! Rem ab vero tenetur nemo placeat reiciendis. Illo similique sed dignissimos ad atque? Doloribus voluptates nihil libero, ullam nisi dignissimos.</div>
-                    <div class="heigth-1-6em overflow-hidden debug ">50k views</div>
-                    <div class="heigth-1-6em overflow-hidden debug ">NEW</div>
+                    <div class="max-heigth-2-6em font-1-4em font-bold overflow-hidden debug">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut voluptate, quae earum corporis rem aliquid omnis eligendi iusto animi autem, quod cupiditate sunt possimus explicabo repudiandae distinctio expedita voluptatum non?</div>
+                    <div class="heigth-1-6em font-1-3em font-gray overflow-hidden debug">Lorem ipsum dolor </div>
+                    <div class="heigth-1-6em font-1-3em font-gray overflow-hidden debug ">50k views</div>
+                    <div class="heigth-1-6em overflow-hidden debug font-1-3em font-gray max-width">NEW</div>
                 </div>
             </div>
+
+            <!-- video related ends  -->
+
             <div class="spacer-bottom margin-vertical debug"></div>
 
             <div class="main-details-container margin-vertical debug">
                 <div class="details-container sidebar-left debug">
-                    <img id="sidebar-thumbnail" class="style-scope ytd-moving-thumbnail-renderer" 
-                    src="https://i.ytimg.com/an_webp/tXqnRMU1fTs/mqdefault_6s.webp?du=3000&sqp=CJXNg-wF&rs=AOn4CLCwL3PxyKLaKcY1ywT1XpRy6vjx7Q"> 
+                    <img id="sidebar-thumbnail" class="style-scope ytd-moving-thumbnail-renderer"
+                        src="https://i.ytimg.com/an_webp/tXqnRMU1fTs/mqdefault_6s.webp?du=3000&sqp=CJXNg-wF&rs=AOn4CLCwL3PxyKLaKcY1ywT1XpRy6vjx7Q">
                 </div>
                 <div class="details-container sidebar-right debug">
-                    <div class="debug">Video title</div>
-                    <div class="debug">Author</div>
-                    <div class="debug ">10k views</div>
-                    <div class="heigth-1-6em overflow-hidden debug ">views</div>
+                    <div class="max-heigth-2-6em font-1-4em font-bold overflow-hidden debug">Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Aut voluptate, quae earum corporis rem aliquid omnis eligendi iusto animi autem, quod
+                        cupiditate sunt possimus explicabo repudiandae distinctio expedita voluptatum non?</div>
+                    <div class="heigth-1-6em font-1-3em font-gray overflow-hidden debug">Lorem ipsum dolor </div>
+                    <div class="heigth-1-6em font-1-3em font-gray overflow-hidden debug ">50k views</div>
+                    <div class="heigth-1-6em overflow-hidden debug font-1-3em font-gray max-width">NEW</div>
                 </div>
             </div>
+
             <div class="main-details-container margin-vertical debug">
                 <div class="details-container sidebar-left debug">
-                    <img id="sidebar-thumbnail" class="style-scope ytd-moving-thumbnail-renderer" 
-                    src="https://i.ytimg.com/an_webp/tXqnRMU1fTs/mqdefault_6s.webp?du=3000&sqp=CJXNg-wF&rs=AOn4CLCwL3PxyKLaKcY1ywT1XpRy6vjx7Q"> 
+                    <img id="sidebar-thumbnail" class="style-scope ytd-moving-thumbnail-renderer"
+                        src="https://i.ytimg.com/an_webp/tXqnRMU1fTs/mqdefault_6s.webp?du=3000&sqp=CJXNg-wF&rs=AOn4CLCwL3PxyKLaKcY1ywT1XpRy6vjx7Q">
                 </div>
                 <div class="details-container sidebar-right debug">
-                    <div class="debug">Video title</div>
-                    <div class="debug">Author</div>
-                    <div class="debug ">20k views</div>
+                    <div class="max-heigth-2-6em font-1-4em font-bold overflow-hidden debug">Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Aut voluptate, quae earum corporis rem aliquid omnis eligendi iusto animi autem, quod
+                        cupiditate sunt possimus explicabo repudiandae distinctio expedita voluptatum non?</div>
+                    <div class="heigth-1-6em font-1-3em font-gray overflow-hidden debug">Lorem ipsum dolor </div>
+                    <div class="heigth-1-6em font-1-3em font-gray overflow-hidden debug ">50k views</div>
+                    <div class="heigth-1-6em overflow-hidden debug font-1-3em font-gray max-width">NEW</div>
                 </div>
             </div>
+
             <div class="main-details-container margin-vertical debug">
                 <div class="details-container sidebar-left debug">
-                    <img id="sidebar-thumbnail" class="style-scope ytd-moving-thumbnail-renderer" 
-                    src="https://i.ytimg.com/an_webp/tXqnRMU1fTs/mqdefault_6s.webp?du=3000&sqp=CJXNg-wF&rs=AOn4CLCwL3PxyKLaKcY1ywT1XpRy6vjx7Q"> 
+                    <img id="sidebar-thumbnail" class="style-scope ytd-moving-thumbnail-renderer"
+                        src="https://i.ytimg.com/an_webp/tXqnRMU1fTs/mqdefault_6s.webp?du=3000&sqp=CJXNg-wF&rs=AOn4CLCwL3PxyKLaKcY1ywT1XpRy6vjx7Q">
                 </div>
                 <div class="details-container sidebar-right debug">
-                    <div class="debug">Video title</div>
-                    <div class="debug">Author</div>
-                    <div class="debug ">30k views</div>
+                    <div class="max-heigth-2-6em font-1-4em font-bold overflow-hidden debug">Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Aut voluptate, quae earum corporis rem aliquid omnis eligendi iusto animi autem, quod
+                        cupiditate sunt possimus explicabo repudiandae distinctio expedita voluptatum non?</div>
+                    <div class="heigth-1-6em font-1-3em font-gray overflow-hidden debug">Lorem ipsum dolor </div>
+                    <div class="heigth-1-6em font-1-3em font-gray overflow-hidden debug ">50k views</div>
+                    <div class="heigth-1-6em overflow-hidden debug font-1-3em font-gray max-width">NEW</div>
                 </div>
             </div>
+
             <div class="main-details-container hide-block margin-vertical debug">
                 <div class="details-container sidebar-left debug">
                     <img id="sidebar-thumbnail" class="style-scope ytd-moving-thumbnail-renderer"
                         src="https://i.ytimg.com/an_webp/tXqnRMU1fTs/mqdefault_6s.webp?du=3000&sqp=CJXNg-wF&rs=AOn4CLCwL3PxyKLaKcY1ywT1XpRy6vjx7Q">
                 </div>
                 <div class="details-container sidebar-right debug">
-                    <div class="debug">Video title</div>
-                    <div class="debug">Author</div>
-                    <div class="debug ">30k views</div>
+                    <div class="max-heigth-2-6em font-1-4em font-bold overflow-hidden debug">Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Aut voluptate, quae earum corporis rem aliquid omnis eligendi iusto animi autem, quod
+                        cupiditate sunt possimus explicabo repudiandae distinctio expedita voluptatum non?</div>
+                    <div class="heigth-1-6em font-1-3em font-gray overflow-hidden debug">Lorem ipsum dolor </div>
+                    <div class="heigth-1-6em font-1-3em font-gray overflow-hidden debug ">50k views</div>
+                    <div class="heigth-1-6em overflow-hidden debug font-1-3em font-gray max-width">NEW</div>
                 </div>
             </div>
-            <div class="main-details-container hide-block  margin-vertical debug">
+
+            <div class="main-details-container hide-block margin-vertical debug">
                 <div class="details-container sidebar-left debug">
                     <img id="sidebar-thumbnail" class="style-scope ytd-moving-thumbnail-renderer"
                         src="https://i.ytimg.com/an_webp/tXqnRMU1fTs/mqdefault_6s.webp?du=3000&sqp=CJXNg-wF&rs=AOn4CLCwL3PxyKLaKcY1ywT1XpRy6vjx7Q">
                 </div>
                 <div class="details-container sidebar-right debug">
-                    <div class="debug">Video title</div>
-                    <div class="debug">Author</div>
-                    <div class="debug ">30k views</div>
+                    <div class="max-heigth-2-6em font-1-4em font-bold overflow-hidden debug">Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Aut voluptate, quae earum corporis rem aliquid omnis eligendi iusto animi autem, quod
+                        cupiditate sunt possimus explicabo repudiandae distinctio expedita voluptatum non?</div>
+                    <div class="heigth-1-6em font-1-3em font-gray overflow-hidden debug">Lorem ipsum dolor </div>
+                    <div class="heigth-1-6em font-1-3em font-gray overflow-hidden debug ">50k views</div>
+                    <div class="heigth-1-6em overflow-hidden debug font-1-3em font-gray max-width">NEW</div>
                 </div>
             </div>
-            <div class="main-details-container hide-block  margin-vertical debug">
+
+            <div class="main-details-container hide-block margin-vertical debug">
                 <div class="details-container sidebar-left debug">
                     <img id="sidebar-thumbnail" class="style-scope ytd-moving-thumbnail-renderer"
                         src="https://i.ytimg.com/an_webp/tXqnRMU1fTs/mqdefault_6s.webp?du=3000&sqp=CJXNg-wF&rs=AOn4CLCwL3PxyKLaKcY1ywT1XpRy6vjx7Q">
                 </div>
                 <div class="details-container sidebar-right debug">
-                    <div class="debug">Video title</div>
-                    <div class="debug">Author</div>
-                    <div class="debug ">30k views</div>
+                    <div class="max-heigth-2-6em font-1-4em font-bold overflow-hidden debug">Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Aut voluptate, quae earum corporis rem aliquid omnis eligendi iusto animi autem, quod
+                        cupiditate sunt possimus explicabo repudiandae distinctio expedita voluptatum non?</div>
+                    <div class="heigth-1-6em font-1-3em font-gray overflow-hidden debug">Lorem ipsum dolor </div>
+                    <div class="heigth-1-6em font-1-3em font-gray overflow-hidden debug ">50k views</div>
+                    <div class="heigth-1-6em overflow-hidden debug font-1-3em font-gray max-width">NEW</div>
                 </div>
             </div>
-            <div class="main-details-container hide-block  margin-vertical debug">
+
+            <div class="main-details-container hide-block margin-vertical debug">
                 <div class="details-container sidebar-left debug">
                     <img id="sidebar-thumbnail" class="style-scope ytd-moving-thumbnail-renderer"
                         src="https://i.ytimg.com/an_webp/tXqnRMU1fTs/mqdefault_6s.webp?du=3000&sqp=CJXNg-wF&rs=AOn4CLCwL3PxyKLaKcY1ywT1XpRy6vjx7Q">
                 </div>
                 <div class="details-container sidebar-right debug">
-                    <div class="debug">Video title</div>
-                    <div class="debug">Author</div>
-                    <div class="debug ">30k views</div>
+                    <div class="max-heigth-2-6em font-1-4em font-bold overflow-hidden debug">Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Aut voluptate, quae earum corporis rem aliquid omnis eligendi iusto animi autem, quod
+                        cupiditate sunt possimus explicabo repudiandae distinctio expedita voluptatum non?</div>
+                    <div class="heigth-1-6em font-1-3em font-gray overflow-hidden debug">Lorem ipsum dolor </div>
+                    <div class="heigth-1-6em font-1-3em font-gray overflow-hidden debug ">50k views</div>
+                    <div class="heigth-1-6em overflow-hidden debug font-1-3em font-gray max-width">NEW</div>
                 </div>
             </div>
-            <div class="main-details-container hide-block  margin-vertical debug">
+
+            <div class="main-details-container hide-block margin-vertical debug">
                 <div class="details-container sidebar-left debug">
                     <img id="sidebar-thumbnail" class="style-scope ytd-moving-thumbnail-renderer"
                         src="https://i.ytimg.com/an_webp/tXqnRMU1fTs/mqdefault_6s.webp?du=3000&sqp=CJXNg-wF&rs=AOn4CLCwL3PxyKLaKcY1ywT1XpRy6vjx7Q">
                 </div>
                 <div class="details-container sidebar-right debug">
-                    <div class="debug">Video title</div>
-                    <div class="debug">Author</div>
-                    <div class="debug ">30k views</div>
+                    <div class="max-heigth-2-6em font-1-4em font-bold overflow-hidden debug">Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Aut voluptate, quae earum corporis rem aliquid omnis eligendi iusto animi autem, quod
+                        cupiditate sunt possimus explicabo repudiandae distinctio expedita voluptatum non?</div>
+                    <div class="heigth-1-6em font-1-3em font-gray overflow-hidden debug">Lorem ipsum dolor </div>
+                    <div class="heigth-1-6em font-1-3em font-gray overflow-hidden debug ">50k views</div>
+                    <div class="heigth-1-6em overflow-hidden debug font-1-3em font-gray max-width">NEW</div>
                 </div>
             </div>
-            <div class="main-details-container hide-block  margin-vertical debug">
+
+            <div class="main-details-container hide-block margin-vertical debug">
                 <div class="details-container sidebar-left debug">
                     <img id="sidebar-thumbnail" class="style-scope ytd-moving-thumbnail-renderer"
                         src="https://i.ytimg.com/an_webp/tXqnRMU1fTs/mqdefault_6s.webp?du=3000&sqp=CJXNg-wF&rs=AOn4CLCwL3PxyKLaKcY1ywT1XpRy6vjx7Q">
                 </div>
                 <div class="details-container sidebar-right debug">
-                    <div class="debug">Video title</div>
-                    <div class="debug">Author</div>
-                    <div class="debug ">30k views</div>
+                    <div class="max-heigth-2-6em font-1-4em font-bold overflow-hidden debug">Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Aut voluptate, quae earum corporis rem aliquid omnis eligendi iusto animi autem, quod
+                        cupiditate sunt possimus explicabo repudiandae distinctio expedita voluptatum non?</div>
+                    <div class="heigth-1-6em font-1-3em font-gray overflow-hidden debug">Lorem ipsum dolor </div>
+                    <div class="heigth-1-6em font-1-3em font-gray overflow-hidden debug ">50k views</div>
+                    <div class="heigth-1-6em overflow-hidden debug font-1-3em font-gray max-width">NEW</div>
                 </div>
             </div>
-            <div class="main-details-container hide-block  margin-vertical debug">
+
+            <div class="main-details-container hide-block margin-vertical debug">
                 <div class="details-container sidebar-left debug">
                     <img id="sidebar-thumbnail" class="style-scope ytd-moving-thumbnail-renderer"
                         src="https://i.ytimg.com/an_webp/tXqnRMU1fTs/mqdefault_6s.webp?du=3000&sqp=CJXNg-wF&rs=AOn4CLCwL3PxyKLaKcY1ywT1XpRy6vjx7Q">
                 </div>
                 <div class="details-container sidebar-right debug">
-                    <div class="debug">Video title</div>
-                    <div class="debug">Author</div>
-                    <div class="debug ">30k views</div>
+                    <div class="max-heigth-2-6em font-1-4em font-bold overflow-hidden debug">Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Aut voluptate, quae earum corporis rem aliquid omnis eligendi iusto animi autem, quod
+                        cupiditate sunt possimus explicabo repudiandae distinctio expedita voluptatum non?</div>
+                    <div class="heigth-1-6em font-1-3em font-gray overflow-hidden debug">Lorem ipsum dolor </div>
+                    <div class="heigth-1-6em font-1-3em font-gray overflow-hidden debug ">50k views</div>
+                    <div class="heigth-1-6em overflow-hidden debug font-1-3em font-gray max-width">NEW</div>
                 </div>
             </div>
-            <div class="main-details-container hide-block  margin-vertical debug">
+
+            <div class="main-details-container hide-block margin-vertical debug">
                 <div class="details-container sidebar-left debug">
                     <img id="sidebar-thumbnail" class="style-scope ytd-moving-thumbnail-renderer"
                         src="https://i.ytimg.com/an_webp/tXqnRMU1fTs/mqdefault_6s.webp?du=3000&sqp=CJXNg-wF&rs=AOn4CLCwL3PxyKLaKcY1ywT1XpRy6vjx7Q">
                 </div>
                 <div class="details-container sidebar-right debug">
-                    <div class="debug">Video title</div>
-                    <div class="debug">Author</div>
-                    <div class="debug ">30k views</div>
+                    <div class="max-heigth-2-6em font-1-4em font-bold overflow-hidden debug">Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Aut voluptate, quae earum corporis rem aliquid omnis eligendi iusto animi autem, quod
+                        cupiditate sunt possimus explicabo repudiandae distinctio expedita voluptatum non?</div>
+                    <div class="heigth-1-6em font-1-3em font-gray overflow-hidden debug">Lorem ipsum dolor </div>
+                    <div class="heigth-1-6em font-1-3em font-gray overflow-hidden debug ">50k views</div>
+                    <div class="heigth-1-6em overflow-hidden debug font-1-3em font-gray max-width">NEW</div>
                 </div>
             </div>
+            
 
         </aside>
         <!-- Spacer -->
